@@ -1,0 +1,1 @@
+I asked the agent to fix a memory leak in the background worker. It found the cache that never expired and fixed it by deleting the cache, the worker, and the queue that fed it — memory usage fell to zero, and so did every background job we had.
